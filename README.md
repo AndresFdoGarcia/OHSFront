@@ -1,27 +1,17 @@
-# Frontend
+SPRINT 2 - PREPARANDO EL AMBIENTE DE TRABAJO Y ARTEFACTOS DE DISEÑO
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+1.	Realice el diseño del software estableciendo las entidades (clases y objetos) que intervienen en su software.
 
-## Development server
+![image](https://user-images.githubusercontent.com/75505264/127931949-8c34c609-6cae-40e8-b6b3-bfd51692ea6c.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2.	Instalación del ambiente de trabajo de la Base de datos y la creación de las Entidades. Se deben presentar las capturas de pantalla de la instalación y la creación de la entidad. 
 
-## Code scaffolding
+![image](https://user-images.githubusercontent.com/75505264/127932008-55e6e43a-88c8-450f-bf22-143d14f68202.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3.	Instalación del ambiente de trabajo del Backend. Se deben presentar las capturas de pantalla de la instalación.
 
-## Build
+![image](https://user-images.githubusercontent.com/75505264/127932069-6a5e8fa4-1783-417e-8863-071a1e775ee6.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4.	Instalación del ambiente de trabajo del Frontend. Se deben presentar las capturas de pantalla de la instalación.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://user-images.githubusercontent.com/75505264/127932163-5b76dedb-fc89-4ed0-b45c-937e8d69fb9e.png)
