@@ -36,6 +36,10 @@ Diseñar e implementar una herramienta WEB para la gestión de reportes de incid
 <br>
 <br>
 
+### Enlace al Backend : https://github.com/AndresFdoGarcia/OHSBack.git
+
+<br>
+<br>
 
 ## SPRINT 2 - PREPARANDO EL AMBIENTE DE TRABAJO Y ARTEFACTOS DE DISEÑO
 
