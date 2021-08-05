@@ -67,8 +67,10 @@ export class EmployeeComponent implements OnInit {
   
 
   ngOnInit(): void {
-    
+    this.futureDisable();
   }
+
+  maxDate: any ="2021-08-05";
 
   getEmployees(){
     this.employeeService.getEmployee().subscribe(
@@ -206,6 +208,24 @@ export class EmployeeComponent implements OnInit {
     
     this.fecha = event.target.value;
     console.log(this.fecha)   
-}
+  }
+
+  futureDisable(){
+    var date:any = new Date();
+    var todayDate:any = date.getDate();
+    var month:any = date.getMonth() + 1;
+    var year:any = date.getFullYear();
+
+    if(todayDate<10){
+      todayDate = '0' + todayDate;
+    }
+
+    if(month<10){
+      month = '0' + month;
+    }
+
+    this.maxDate = year + "-" + month + "-" + todayDate;
+
+  }
 
 }

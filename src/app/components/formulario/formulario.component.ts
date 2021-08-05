@@ -66,7 +66,7 @@ export class FormularioComponent implements OnInit {
   }
 
   enviar(modal : any){
-    this.modalService.open(modal, { size: 'xl', backdrop: 'static'});
+    this.modalService.open(modal, { size: 'xl'});
   }
   
   PrintPage(){
@@ -76,17 +76,12 @@ export class FormularioComponent implements OnInit {
   ultra(){
     for (let i of this.fomularioService.formularios){
 
-      this.datain = i
+      this.datain = i      
       this.datain.tipo.shift()
       this.datain.agente.shift()
-      this.datain.parte.shift()  
-      this.arreglofinal.push(this.datain)
-      
-      console.log(this.arreglofinal)
-      
+      this.datain.parte.shift()      
+      this.arreglofinal.push(this.datain)  
     }        
-  }
-
-    
+  }  
 
 }
