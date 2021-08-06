@@ -1,24 +1,25 @@
 <div class="majoruse">
-    <table class="table table-striped">
+    <button type="button" class="btn btn-outline-success btn-sm" (click)="exportexcel()">Exportar a Excel</button>
+    <table class="table table-striped" id="excel-table">
         <thead>
             <tr>
                 <th>Empleado</th>
                 <th>Fecha</th>
                 <th>Lugar Accidente</th>
-                <th>Mecanismo</th>
                 <th>Sitio</th>
+                <th>Mecanismo</th>
                 <th>Detalle</th>
                                    
             </tr>
         </thead>
         <tbody> 
-            <tr *ngFor="let item of arreglofinal">
+            <tr *ngFor="let item of arreglofinal | paginate: { itemsPerPage: 7, currentPage: p }">
                 
                 <td>{{item.empleado.name}}</td>
                 <td>{{item.fecha}}</td>
                 <td>{{item.lugar}}</td>
-                <td>{{item.meca}}</td>
                 <td>{{item.sitio}}</td>
+                <td>{{item.meca}}</td>
                 <td><button type="button" class="btn btn-primary btn-sm" (click)="enviar(nombreModal)">Abrir</button>
                     
                     <ng-template #nombreModal let c="close">
@@ -197,8 +198,9 @@
             
         </tbody>
     </table>
-    
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>   
 </div>
+
 
 
 

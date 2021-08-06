@@ -62,7 +62,7 @@ export class EmployeeComponent implements OnInit {
     {name :"Lugar trabajo", id: 5},
     {name :"Animales", id: 6},
     {name :"no Clasificado", id: 7},
-  ];
+  ];  
 
   
 
