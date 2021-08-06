@@ -75,8 +75,7 @@ export class EmployeeComponent implements OnInit {
   getEmployees(){
     this.employeeService.getEmployee().subscribe(
       res => {
-        this.employeeService.employees = res;
-        console.log(res)
+        this.employeeService.employees = res;        
       },
       err => console.log(err)
     )
@@ -116,7 +115,6 @@ export class EmployeeComponent implements OnInit {
 
   createformularios(form : NgForm){
 
-    console.log(this.deathE);
     const flag = this.deathE
 
     if(flag == "true"){
@@ -149,7 +147,7 @@ export class EmployeeComponent implements OnInit {
 
     this.fomularioService.createFormulario(form.value).subscribe(
       res=>{
-        console.log(res)
+        
         form.reset();
         this.router.navigate(['/formulario'])
         
@@ -169,8 +167,7 @@ export class EmployeeComponent implements OnInit {
   }
 
   onChange(event:any) {
-    if(event.target.checked) {
-      console.log(event.target.value)
+    if(event.target.checked) {      
       this.emailFormArray.push(event.target.value);
     } else {
       let index = this.emailFormArray.indexOf(event.target.value);
@@ -206,8 +203,7 @@ export class EmployeeComponent implements OnInit {
 
   onTextDate(event:any){
     
-    this.fecha = event.target.value;
-    console.log(this.fecha)   
+    this.fecha = event.target.value;    
   }
 
   futureDisable(){
