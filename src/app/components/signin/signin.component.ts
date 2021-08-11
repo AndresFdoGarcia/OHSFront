@@ -36,4 +36,15 @@ export class SigninComponent implements OnInit {
     )
   }
 
+  dataon(){
+    this.user.email = "sergiof@ohsreport.com";
+    this.user.code = "99846152";
+  }
+
+  data2on(){
+    this.user.email ="juanp@ohsreport.com";
+    this.user.code ="1234567";
+
+  }
+
 }

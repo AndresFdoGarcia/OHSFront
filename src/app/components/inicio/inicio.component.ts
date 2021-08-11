@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgbModal, ModalDismissReasons,NgbModalRef} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModal, ModalDismissReasons,NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -9,15 +9,14 @@ import {NgbModal, ModalDismissReasons,NgbModalRef} from '@ng-bootstrap/ng-bootst
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-  
-  constructor( private modalService: NgbModal ) { }
+
+  constructor( private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
 
   enviar(modal : any){
     this.modalService.open(modal, { size: 'xl'});    
-  } 
- 
+  }
   
 }

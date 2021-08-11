@@ -19,12 +19,16 @@
 }
 .container1 h6{
     text-align: left;
-    color: rgb(209, 202, 202);
+    color: white;
     
 }
 
 .classico{
-    padding: 0em;  
+    padding: 0.5em;
+    width: 22em;
+    color: rgb(209, 202, 202);
+    font-size: small;
+    height: auto;  
 }
 
 .form-boxx{
@@ -74,6 +78,6 @@ input {
  @media (max-width:768px){
     .grid{        
         grid-template-columns: 1fr;
-        grid-template-rows: 1% 99%;    
+        grid-template-rows: auto;  
     }
  }
